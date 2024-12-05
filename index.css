@@ -122,3 +122,6 @@
     font-weight: 700;
     font-size: 20px;
 }
+.container .sbox .message p span{
+    margin-left: 20px;
+}
