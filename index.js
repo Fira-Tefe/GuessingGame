@@ -3,6 +3,7 @@ let secret = document.querySelector('.secretbox').textContent;
 secret = Math.trunc((Math.random()*20)+1);
 console.log(secret, typeof secret);
 score = 5;
+highscore = 0;
 
 document.querySelector('.gbutton').addEventListener('click', function(){
     let guessnumber = Number(document.querySelector('#inputn').value);
@@ -33,8 +34,24 @@ document.querySelector('.gbutton').addEventListener('click', function(){
         document.querySelector('.guess').textContent = 'Correct guessing!'
         document.querySelector('.cmessage').textContent = 'Congra!';
         document.querySelector('.container').style.backgroundColor = 'green'; 
+        if(score > highscore){
+            highscore = score;
+            document.querySelector('.highscore span').textContent = highscore;
+        }
+        else{
+            document.querySelector('.highscore span').textContent = highscore;
+        }
     }
 });
 document.querySelector('.button').addEventListener('click', function(){
+    localStorage.setItem('highscore', highscore);
     location.reload();
 });
+
+window.onload = function() {
+    const storedHighscore = localStorage.getItem('highscore');
+    if (storedHighscore !== null) {
+        highscore = Number(storedHighscore);
+        document.querySelector('.highscore span').textContent = highscore;
+    }
+};
