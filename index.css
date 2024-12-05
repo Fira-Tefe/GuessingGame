@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 97vh;
+    background: #062425;
+}
+.container .fbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.container .fbox .button{
+    border: 1px solid rgb(95, 250, 255);
+    width: 120px;
+    height: 50px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.container .fbox p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+.container .secret{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+.container .secret p{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.container .secret .secretbox{
+    border: 1px solid rgb(137, 255, 249);
+    background: white;
+    border-radius: 5px;
+    width: 140px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 70px;
+    font-weight: 700;
+}
+.container .sbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .sbox .input input{
+    border: 1px solid rgb(95, 250, 255);
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+    padding: 10px;
+}
+.container .sbox .input .gbutton{
+    margin-top: 25px;
+    background-color: rgb(153, 224, 221);
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container .sbox .message p{
+    margin: 20px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
